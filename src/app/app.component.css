@@ -1,14 +1,81 @@
 p {
   font-family: Lato;
 }
-
+.employeesBlock{
+  border-spacing: 0px;
+}
 .employeesBlock th{
   background-color: rgb(247, 247, 247);
-  border-bottom: 1px solid grey;
   height: 20px!important;
   width: 100px;
   vertical-align: top!important;
+  padding: 5px 5px;
+  font-size: 14px;
 }
 .employeesBlock td{
   height: 20px;
+  color: rgb(65, 65, 65);
+  border-bottom: 1px solid rgb(196, 196, 196);
+  font-size: 12px;
+  padding:4px;
+}
+
+.employeesBlock tr:nth-child(odd){
+background-color: rgb(242 242 242);
+}
+
+.employeesBlock{
+  border: 1px solid rgb(216, 216, 216);
+  font-family: Arial;
+  font-size: 15px;
+}
+
+.headerTab{
+  width: 100%;
+  font-family: Arial;
+  font-size: 15px;
+}
+
+.headerTab input[type='text']{
+  width :90%;
+  padding: 3px 6px;
+  outline:none;
+  border:0;
+  border-bottom:1px solid grey;
+}
+.headerTab .radioB{
+  width:20%
+}
+
+.newCanDidate td{
+width: 50;
+padding: 10px;
+}
+
+.newCanDidate button{
+  width:120px;
+  padding:6px 5px;
+  background-color: rgb(39, 161, 165);
+  border-radius: 2px;
+  outline:none;
+  border: rgb(39, 97, 82);
+  color:#fff;
+  box-shadow: 1px 1px 1px rgb(231, 231, 231);
+}
+.newCanDidate input[type='text']{
+  width :90%;
+  padding: 3px 6px;
+  outline:none;
+  border:0;
+  border-bottom:1px solid grey;
+}
+
+.newCanDidate td{
+  font-family: Arial;
+  width: 40%;
+  margin-left: 10px;
+}
+
+label{
+  margin-left: 20px;
 }

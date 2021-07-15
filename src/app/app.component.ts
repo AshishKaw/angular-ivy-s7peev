@@ -16,20 +16,23 @@ export class AppComponent {
   ifirst_name:string;
   ilast_name:string;
   iemail:string;
-  igender:string='Male';
+  emp_gender:string='NA';
   id=1;
   empObj={};
 
-  checkEmployee(){
-    
+
+  checkEmployee(rad:string){
+    this.emp_gender=rad;
     this.filteredemployeeDetails=[];
-    for(let empl in this.employeeDetails){
+    for(let empl in this.employeeDetails){     
+      if(this.employeeDetails[empl]['gender']==this.emp_gender || (this.employeeDetails[empl]['first_name']+this.employeeDetails[empl]['last_name']+ this.employeeDetails[empl]['email']).indexOf(this.searchValue)>-1){
+          this.filteredemployeeDetails.push(this.employeeDetails[empl]);
+       }
+       
      
-      if((this.employeeDetails[empl]['first_name']+this.employeeDetails[empl]['last_name']+ this.employeeDetails[empl]['email']).indexOf(this.searchValue)>-1){
-      this.filteredemployeeDetails.push(this.employeeDetails[empl]);
       console.log("---");
       console.log(this.employeeDetails[empl]);
-     }
+     
     }
   }
 

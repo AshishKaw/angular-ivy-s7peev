@@ -2,10 +2,10 @@
 <div class="container">
 <table class="headerTab">
 <tr>
-  <td><label for="male">Male</label>  <input type="radio" class="gRadio" (click)="checkEmployee()" [(ngModel)]="in_gender" name="in_gender"  value="Male"  checked/><td>
-  <td><label for="male">FeMale</label> <input type="radio"  (click)="checkEmployee()" class="gRadio" [(ngModel)]="in_gender" name="in_gender"  value="Female"/> <td>
-  <td>
-    <input type="text" [(ngModel)]="searchValue" (keyup)="checkEmployee()"/>
+  <td class="radioB"> <div>Male <input type="radio" class="gRadio" (click)="checkEmployee('Male')" [(ngModel)]="in_gender" name="in_gender"  value="Male"  checked /></div></td>
+  <td class="radioB">FeMale <input type="radio"  (click)="checkEmployee('Female')" class="gRadio" [(ngModel)]="in_gender" name="in_gender"  value="Female"/> </td>
+  
+   <td> <input type="text" placeholder="Search Here" [(ngModel)]="searchValue" (keyup)="checkEmployee('')"/>
   <td>
 </tr>
 </table>
@@ -31,7 +31,7 @@
   </tbody>
 </table>
 <br/>
-<h2>Add New Candidate</h2>
+<h3>Add New Candidate</h3>
 <table class="newCanDidate">
 <tr>
  <td><input type="text" [(ngModel)]="ifirst_name" placeholder="First Name"/></td>
