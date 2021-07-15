@@ -1,3 +1,14 @@
 p {
   font-family: Lato;
 }
+
+.employeesBlock th{
+  background-color: rgb(247, 247, 247);
+  border-bottom: 1px solid grey;
+  height: 20px!important;
+  width: 100px;
+  vertical-align: top!important;
+}
+.employeesBlock td{
+  height: 20px;
+}
